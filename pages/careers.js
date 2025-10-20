@@ -1,6 +1,12 @@
 import Link from 'next/link'
 
 export default function Careers() {
+  const apps = [
+    { name: "Human Resources Application", url: "https://forms.gle/PvLkjwgckNBJfjGRA" },
+    { name: "Public Relations Application", url: "https://forms.gle/q8puK6XYe5UxTbp17" },
+    { name: "Developer Application", url: "https://forms.gle/qWoVNzAQirPsbqtr6" }
+  ];
+
   return (
     <>
       <header>
@@ -14,10 +20,26 @@ export default function Careers() {
           <Link href="/links">Links</Link>
         </nav>
       </header>
+
       <main>
-        <h2>Careers at Freshway Corporation</h2>
-        <p>Join our team and be part of the future of innovation!</p>
-        <button>Apply Now</button>
+        <h2>Join Freshway Corporation</h2>
+        <p>Be part of our dedicated team and help us bring the best virtual shopping experience to Roblox!</p>
+
+        <div className="modern-grid">
+          {apps.map((app, index) => (
+            <div key={index} className="modern-card">
+              <h3>{app.name}</h3>
+              <a 
+                href={app.url} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="link-button"
+              >
+                Apply Now
+              </a>
+            </div>
+          ))}
+        </div>
       </main>
     </>
   )
