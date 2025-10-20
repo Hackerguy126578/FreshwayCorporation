@@ -1,3 +1,4 @@
+/* Background animation */
 @keyframes gradientAnimation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -13,6 +14,7 @@ body {
   color: #000;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -44,9 +46,11 @@ nav a:hover {
   color: #104E8B;
 }
 
+/* Main layout */
 main {
   padding: 60px 20px;
   text-align: center;
+  animation: fadeIn 1s ease-in;
 }
 
 h2 {
@@ -54,6 +58,7 @@ h2 {
   margin-bottom: 20px;
 }
 
+/* Buttons */
 button, .link-button {
   background-color: #1E90FF;
   color: white;
@@ -65,26 +70,40 @@ button, .link-button {
   margin: 10px;
   text-decoration: none;
   display: inline-block;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 button:hover, .link-button:hover {
   background-color: #104E8B;
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.03);
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.85);
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 12px;
-  max-width: 500px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-  transition: 0.3s;
+/* Modern card & grid system */
+.modern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  padding: 0 20px;
 }
 
-.card:hover {
+.modern-card, .card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.modern-card:hover, .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+}
+
+.modern-card h3, .card h3 {
+  color: #1E90FF;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -93,6 +112,11 @@ ul {
 }
 
 ul li {
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
+/* Fade animation for pages */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
