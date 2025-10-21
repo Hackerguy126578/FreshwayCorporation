@@ -15,8 +15,8 @@ export default function Reviews() {
         </nav>
       </header>
       <main>
-        <h2>Customer Reviews</h2>
-        <p>See what people are saying about Freshway Corporation.</p>
+        <h2>Reviews</h2>
+        <p>No reviews yet.</p>
       </main>
     </>
   )
