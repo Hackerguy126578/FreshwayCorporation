@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 export default function Careers() {
   const apps = [
+    { name: "Middle Rank Application", url: "https://forms.gle/CCBUuKCm7Ju9MyWE9" },
     { name: "Human Resources Application", url: "https://forms.gle/PvLkjwgckNBJfjGRA" },
     { name: "Public Relations Application", url: "https://forms.gle/q8puK6XYe5UxTbp17" },
     { name: "Developer Application", url: "https://forms.gle/qWoVNzAQirPsbqtr6" }
