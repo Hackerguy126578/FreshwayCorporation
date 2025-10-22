@@ -39,7 +39,7 @@ export default function Updates() {
               • Working drinks dispenser <br />
               • Various bug fixes!
             </p>
-            <p><em>Released: October 2025</em></p>
+            <p><em>Released: 22-10-2025</em></p>
           </div>
 
           {/* Add more cards below for future updates */}
