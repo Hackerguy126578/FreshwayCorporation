@@ -25,7 +25,15 @@ export default function Updates() {
 
       <main>
         <h2>Latest Updates</h2>
-        <p>Stay tuned for company news and announcements.</p>
+        <p>UPDATE!
+Whats new?
+- Costa Coffee
+- More realistic trees
+- Outer detail.
+- More spooky vibes.
+- Pumkins (We wont sell them.
+-Drinks - Working
+- Fixed bugs and more!</p>
       </main>
     </>
   )
