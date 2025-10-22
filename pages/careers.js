@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 export default function Careers() {
   const apps = [
+    { name: "Freshway Staff Member", url: "https://www.roblox.com/games/111969553355039/Freshway-PLC-Application-Center" },
     { name: "Middle Rank Application", url: "https://forms.gle/CCBUuKCm7Ju9MyWE9" },
     { name: "Human Resources Application", url: "https://forms.gle/PvLkjwgckNBJfjGRA" },
     { name: "Public Relations Application", url: "https://forms.gle/q8puK6XYe5UxTbp17" },
