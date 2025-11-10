@@ -31,6 +31,20 @@ function MyApp({ Component, pageProps }) {
       <audio id="dingSound" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg"></audio>
       <div id="secretMessage">Welcome to Freshway — Freshness Awaits! 🌿</div>
     </>
+  {[...Array(20)].map((_, i) => (
+  <div
+    key={i}
+    className="snowflake"
+    style={{
+      left: `${Math.random() * 100}vw`,
+      animationDuration: `${5 + Math.random() * 10}s`,
+      fontSize: `${12 + Math.random() * 12}px`
+    }}
+  >
+    ❄
+  </div>
+))}
+
   )
 }
 
