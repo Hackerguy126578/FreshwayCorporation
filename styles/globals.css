@@ -14,7 +14,6 @@ body {
   color: #000;
 }
 
-
 /* Header */
 header {
   display: flex;
@@ -158,8 +157,14 @@ ul li {
   padding: 12px 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-weight: 600;
+  z-index: 999;
+}
 
-  .snowflake {
+/* Snowflake animation */
+.snowflake {
   position: fixed;
   top: -10px;
   color: white;
@@ -168,6 +173,7 @@ ul li {
   z-index: 9999;
   pointer-events: none;
   animation: fall linear infinite;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
 }
 
 @keyframes fall {
@@ -175,8 +181,3 @@ ul li {
   100% { transform: translateY(100vh) rotate(360deg); opacity: 0.3; }
 }
 
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  font-weight: 600;
-  z-index: 999;
-}
