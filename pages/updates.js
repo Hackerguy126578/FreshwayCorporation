@@ -42,6 +42,22 @@ export default function Updates() {
             <p><em>Released: 22-10-2025</em></p>
           </div>
 
+{/* Example Update Card */}
+          <div className="modern-card">
+            <h3> 🎄 Christmas Update</h3>
+            <p>
+              <strong>What’s New:</strong><br />
+              • Christmas Decorations added ☕<br />
+              • Warehouse <br />
+              • Meeting Room <br />
+              • New music<br />
+              • Offices<br />
+              • New fire alarm <br />
+              • Security alarm in Costa Coffee!
+            </p>
+            <p><em>Released: 10-11-2025</em></p>
+          </div>
+  
           {/* Add more cards below for future updates */}
           {/* 
           <div className="modern-card">
